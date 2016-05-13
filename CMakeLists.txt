@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.6)
 project (python-moos)
 find_package(MOOS 10 REQUIRED)
 
-find_package(PythonLibs)
+find_package(PythonLibs 2.7 REQUIRED)
 if(PYTHONLIBS_FOUND)
   include_directories("${PYTHON_INCLUDE_DIRS}")
 else()
